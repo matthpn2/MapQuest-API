@@ -61,7 +61,7 @@ class STEPS:
 
 class TOTALDISTANCE:
     def map_output(result: 'json'):
-        print('TOTAL DISTANCES: ' + str(round(result['route']['distance'])) + ' miles.')
+        print('TOTAL DISTANCE: ' + str(round(result['route']['distance'])) + ' miles.')
         print()
 
 class TOTALTIME:
