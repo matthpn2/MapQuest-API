@@ -1,10 +1,10 @@
 # MapQuest-API
 A Simple Navigation System.
 
-The Navigation Program Overview <br />
+### **Program Overview** <br />
 This program describes a trip taken between a sequence of locations with the goal being to travel from the first location to the second, then from the second to the third and so on, until reaching the last location. Based on the user’s input, it will show different information about the trip.
 
-Example of Program Execution <br />
+### **Example of Program Execution**<br />
 3 <br />
 4533 Campus Dr, Irvine, CA <br />
 1111 Figueroa St, Los Angeles, CA <br />
@@ -15,7 +15,7 @@ TOTALDISTANCE <br />
 TOTALTIME <br />
 LATLONG <br />
 
-DIRECTIONS <br />
+**DIRECTIONS** <br />
 Start out going northwest on Campus Dr toward Carlson Ave. <br />
 Turn right onto Jamboree Rd. <br />
 Merge onto I-405/San Diego Fwy. <br />
@@ -37,11 +37,11 @@ Turn left onto S Las Vegas Blvd. <br />
 S Las Vegas Blvd becomes Las Vegas Blvd N. <br />
 SOUTH LAS VEGAS BOULEVARD. <br />
 
-TOTAL DISTANCES: 317 miles. <br />
+**TOTAL DISTANCE:** 317 miles. <br />
 
-TOTAL TIME: 291 minutes. <br />
+**TOTAL TIME:** 291 minutes. <br />
 
-LATLONGS <br />
+**LATLONGS** <br />
 33.66N 117.85W <br />
 34.05N 118.26W <br />
 36.16N 115.14W <br />
