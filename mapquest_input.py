@@ -37,8 +37,8 @@ typed into the console while assuming that the user knows the precise input form
 
 '''
 
-import MapQuestAPI
-import MapQuestOutput
+import mapquest_api
+import mapquest_output
 
 def trip_locations() -> int:
     '''
@@ -104,8 +104,8 @@ if __name__ == '__main__':
     number_of_outputs = program_outputs()
     instructions = output_descriptions(number_of_outputs)
 
-    mapquest_url = MapQuestAPI.build_route_url(route)
-    json_format = MapQuestAPI.http_request(mapquest_url)
+    mapquest_url = mapquest_api.build_route_url(route)
+    json_format = mapquest_api.http_request(mapquest_url)
 
-    MapQuestOutput.print_map(instructions, json_format)
+    mapquest_output.print_map(instructions, json_format)
     print('Directions Courtesy of MapQuest; Map Data Copyright OpenStreetMap Contributors.')
