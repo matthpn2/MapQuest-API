@@ -48,7 +48,6 @@ def trip_locations() -> int:
         number_of_locations = int(input())
         assert (number_of_locations > 1) == True
         return number_of_locations
-    
     except:
         print('The number of locations must be greater than 1. Please try again.')
         return trip_locations()
@@ -62,7 +61,6 @@ def location_descriptions(n: int) -> list:
         description = str(input())
         locations.append(description)
         n -= 1
-
     return locations
 
 def program_outputs() -> int:
@@ -73,7 +71,6 @@ def program_outputs() -> int:
         number_of_outputs = int(input())
         assert (number_of_outputs > 0) == True
         return number_of_outputs
-
     except:
         print('The number of outputs must be greater than 0. Please try again.')
         return program_outputs()
@@ -83,7 +80,6 @@ def output_descriptions(n: int) -> list:
         Asks user for input of what type of outputs they want and returns a list of output instructions.
     '''
     descriptions = [ 'STEPS', 'TOTALDISTANCE', 'TOTALTIME', 'LATLONG' ]
-
     outputs = []
     while n > 0:
         instruction = str(input())
@@ -94,7 +90,6 @@ def output_descriptions(n: int) -> list:
             print('Invalid output type. Please try again.')
             continue
     print()
-    
     return outputs
 
 if __name__ == '__main__':

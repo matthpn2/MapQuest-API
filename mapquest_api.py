@@ -50,7 +50,6 @@ def build_route_url(locations: list) -> str:
     query_parameters = [ ('key', decode_key()), ('from', locations[0]) ]
     for l in locations[1:]:
         query_parameters.append(('to', l))
-    
     return BASE_MAPQUEST_URL + '/directions/v2/route?' + urllib.parse.urlencode(query_parameters)
 
 def http_request(url: str) -> 'json':
@@ -61,12 +60,10 @@ def http_request(url: str) -> 'json':
     response = None
     try:
         response = urllib.request.urlopen(url)
-        json_text = response.read().decode(encoding = 'utf-8')
+        json_text = response.read().decode(encoding='utf-8')
         return json.loads(json_text)
-    
     except:
         print('MapQuest Error!')
-
     finally:
         if response != None:
             response.close()

@@ -97,6 +97,5 @@ def print_map(instructions: list, json_result: 'json'):
         assert json_result['info']['messages'] == []
         for instruction in instructions:
             eval(instruction).map_output(json_result)
-
     except:
         print('NO ROUTE FOUND' + '\n')
